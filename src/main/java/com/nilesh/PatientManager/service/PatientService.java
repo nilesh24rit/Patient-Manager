@@ -1,6 +1,8 @@
 package com.nilesh.PatientManager.service;
 
 import com.nilesh.PatientManager.dto.PatientResponseDto;
+import com.nilesh.PatientManager.mapper.PatientMapper;
+import com.nilesh.PatientManager.model.Patient;
 import com.nilesh.PatientManager.repository.PatientRepository;
 
 import org.springframework.stereotype.Service;
@@ -17,7 +19,7 @@ public class PatientService {
     }// better than @Autowired can use final and easier testing
 
     public List<PatientResponseDto> getPatient(){
-        List<> all = patientRepository.findAll();
-        return all;
+        List<Patient> patients = patientRepository.findAll();
+        return patients.stream().map(PatientMapper::toDTO).toList();
     }
 }
