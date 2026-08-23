@@ -1,5 +1,6 @@
-package com.nilesh.PatientManager.Service;
+package com.nilesh.PatientManager.service;
 
+import com.nilesh.PatientManager.dto.PatientResponseDto;
 import com.nilesh.PatientManager.model.patient;
 import com.nilesh.PatientManager.repository.PatientRepository;
 
@@ -16,8 +17,8 @@ public class PatientService {
         this.patientRepository=patientRepository;
     }// better than @Autowired can use final and easier testing
 
-    public List<?> getPatient(){
-        List<patient> all = patientRepository.findAll();
+    public List<PatientResponseDto> getPatient(){
+        List<PatientResponseDto> all = patientRepository.findAll();
         return all;
     }
 }
