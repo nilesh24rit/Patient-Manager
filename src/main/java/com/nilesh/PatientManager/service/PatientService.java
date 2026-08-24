@@ -18,7 +18,7 @@ public class PatientService {
         this.patientRepository=patientRepository;
     }// better than @Autowired can use final and easier testing
 
-    public List<PatientResponseDto> getPatient(){
+    public List<PatientResponseDto> getAllPatient(){
         List<Patient> patients = patientRepository.findAll();
         return patients.stream().map(PatientMapper::toDTO).toList();
     }
