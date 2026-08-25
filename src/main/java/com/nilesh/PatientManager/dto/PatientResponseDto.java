@@ -9,6 +9,6 @@ public class PatientResponseDto {
     private String id;
     private String name;
     private String address;
-    private String emial;
+    private String email;
     private String dob;
 }

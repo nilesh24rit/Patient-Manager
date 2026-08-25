@@ -1,0 +1,14 @@
+### POST request to example server
+POST http://localhost:8080/patients/AllPatients
+Content-Type: application/json
+
+{
+  "name": "Rahul Sharma",
+  "email": "rahul.sharma@gmail.com",
+  "address": "Bangalore, Karnataka",
+  "dob": "2003-05-15",
+  "regestrationDate": "2026-08-25"
+}
+
+
+###
