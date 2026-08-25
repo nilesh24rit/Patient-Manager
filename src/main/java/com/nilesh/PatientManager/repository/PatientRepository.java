@@ -10,4 +10,5 @@ import java.util.UUID;
 // in the parameters pass the entity which the repository controls
 // and the type of id that it controlls
 public interface PatientRepository extends JpaRepository<Patient, UUID> {
+    boolean existsByEmail(String email);//unique email check
 }
