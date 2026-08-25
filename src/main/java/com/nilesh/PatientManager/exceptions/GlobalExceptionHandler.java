@@ -1,5 +1,6 @@
 package com.nilesh.PatientManager.exceptions;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -9,6 +10,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @ControllerAdvice
+@Slf4j
 public class GlobalExceptionHandler {
 
     @ExceptionHandler(MethodArgumentNotValidException.class)//handles validation Exceptions
@@ -28,6 +30,7 @@ public class GlobalExceptionHandler {
     public ResponseEntity<Map<String, String>> handleEmailAlreadyExistsException(
             EmailAlreadyExistsException ex) {
         Map<String, String> error = new HashMap<>();
+        log.error("Email already exists: {}", ex.getMessage());
         error.put("error", ex.getMessage());
         return ResponseEntity.badRequest().body(error);
     }
