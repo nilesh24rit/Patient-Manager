@@ -9,6 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.UUID;
 
 @RestController
 @RequestMapping("/patient")
@@ -19,16 +20,23 @@ public class PatientController {
         this.patientService = patientService;
     }
 
-    @GetMapping("/AllPatients")
+    @GetMapping("/all-patient")
     public ResponseEntity<List<PatientResponseDto>> getall(){
         List<PatientResponseDto> allPatient = patientService.getAllPatient();
         if(allPatient!=null) return ResponseEntity.ok().body(allPatient);
         return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 
-    @PostMapping
+    @PostMapping("/create-patient")
     public ResponseEntity<PatientResponseDto> createPatient(@Valid @RequestBody PatientRequestDTO patientRequestDTO){
         PatientResponseDto patientResponseDto = patientService.createPatient(patientRequestDTO);
+        return ResponseEntity.ok().body(patientResponseDto);
+    }
+
+    @PutMapping("/update-patient/{id}")
+    public ResponseEntity<PatientResponseDto> updatePatient(
+            @PathVariable UUID id, @Valid @RequestBody PatientRequestDTO patientRequestDTO){
+        PatientResponseDto patientResponseDto = patientService.updatePatient(id, patientRequestDTO);
         return ResponseEntity.ok().body(patientResponseDto);
     }
 }
