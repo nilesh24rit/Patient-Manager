@@ -42,7 +42,7 @@ public class PatientService {
 
         Patient patient = patientRepository.findById(id).orElseThrow(
                 () -> new IdNotFoundException("Patient with id " + id + " not found"));
-        if (patientRepository.existsByEmail(patientRequestDTO.getEmail())) {
+        if (patientRepository.existsByEmailandIdNot(patientRequestDTO.getEmail(), id)) {
             throw new EmailAlreadyExistsException("A patient with this email already exists: "
                     + patientRequestDTO.getEmail());
         }

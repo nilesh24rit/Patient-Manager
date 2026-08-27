@@ -4,8 +4,10 @@ import com.nilesh.PatientManager.dto.PatientRequestDTO;
 import com.nilesh.PatientManager.dto.PatientResponseDto;
 import com.nilesh.PatientManager.service.PatientService;
 import jakarta.validation.Valid;
+import jakarta.validation.groups.Default;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -35,7 +37,7 @@ public class PatientController {
 
     @PutMapping("/update-patient/{id}")
     public ResponseEntity<PatientResponseDto> updatePatient(
-            @PathVariable UUID id, @Valid @RequestBody PatientRequestDTO patientRequestDTO){
+            @PathVariable UUID id, @Validated({Default.class}) @RequestBody PatientRequestDTO patientRequestDTO){
         PatientResponseDto patientResponseDto = patientService.updatePatient(id, patientRequestDTO);
         return ResponseEntity.ok().body(patientResponseDto);
     }
