@@ -14,6 +14,6 @@ import java.util.UUID;
 public interface PatientRepository extends JpaRepository<Patient, UUID> {
     boolean existsByEmail(String email);//unique email check
 
-    boolean existsByEmailandIdNot(@NotBlank(message = "Email cannot be blank")
-                                  @Email(message = "Enter a valid email") String email, UUID id);
+    boolean existsByEmailAndIdNot(@NotBlank(message = "Email cannot be blank")
+                                  @Email(message = "Enter a valid email") String email, UUID id);//checks if some other id has the same email
 }
