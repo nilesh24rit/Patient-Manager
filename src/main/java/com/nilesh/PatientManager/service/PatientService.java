@@ -8,6 +8,7 @@ import com.nilesh.PatientManager.mapper.PatientMapper;
 import com.nilesh.PatientManager.model.Patient;
 import com.nilesh.PatientManager.repository.PatientRepository;
 
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
@@ -52,5 +53,11 @@ public class PatientService {
         patient.setDob(LocalDate.parse(patientRequestDTO.getDob()));
         Patient updatedPatient = patientRepository.save(patient);
         return PatientMapper.toDTO(updatedPatient);
+    }
+    public ResponseEntity<PatientResponseDto> deletePatient(UUID id) {
+        Patient patient = patientRepository.findById(id).orElseThrow(
+                () -> new IdNotFoundException("Patient with id " + id + " not found"));
+        patientRepository.delete(patient);
+        return ResponseEntity.ok().body(PatientMapper.toDTO(patient));
     }
 }
