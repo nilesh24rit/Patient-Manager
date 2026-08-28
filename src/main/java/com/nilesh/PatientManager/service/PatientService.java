@@ -8,29 +8,28 @@ import com.nilesh.PatientManager.mapper.PatientMapper;
 import com.nilesh.PatientManager.model.Patient;
 import com.nilesh.PatientManager.repository.PatientRepository;
 
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
 import java.util.List;
-import java.util.Optional;
 import java.util.UUID;
-
 
 @Service
 public class PatientService {
-    private PatientRepository patientRepository;
 
-    public PatientService (PatientRepository patientRepository){
-        this.patientRepository=patientRepository;
-    }// better than @Autowired can use final and easier testing
+    // Constructor injection instead of @Autowired - allows the field to be final and is easier to test
+    private final PatientRepository patientRepository;
 
-    public List<PatientResponseDto> getAllPatient(){
+    public PatientService(PatientRepository patientRepository) {
+        this.patientRepository = patientRepository;
+    }
+
+    public List<PatientResponseDto> getAllPatient() {
         List<Patient> patients = patientRepository.findAll();
         return patients.stream().map(PatientMapper::toDTO).toList();
     }
 
-    public PatientResponseDto createPatient(PatientRequestDTO patientRequestDTO){
+    public PatientResponseDto createPatient(PatientRequestDTO patientRequestDTO) {
         if (patientRepository.existsByEmail(patientRequestDTO.getEmail())) {
             throw new EmailAlreadyExistsException("A patient with this email already exists: "
                     + patientRequestDTO.getEmail());
@@ -39,8 +38,7 @@ public class PatientService {
         return PatientMapper.toDTO(newPatient);
     }
 
-    public PatientResponseDto updatePatient(UUID id,PatientRequestDTO patientRequestDTO){
-
+    public PatientResponseDto updatePatient(UUID id, PatientRequestDTO patientRequestDTO) {
         Patient patient = patientRepository.findById(id).orElseThrow(
                 () -> new IdNotFoundException("Patient with id " + id + " not found"));
         if (patientRepository.existsByEmailAndIdNot(patientRequestDTO.getEmail(), id)) {
@@ -54,10 +52,11 @@ public class PatientService {
         Patient updatedPatient = patientRepository.save(patient);
         return PatientMapper.toDTO(updatedPatient);
     }
-    public ResponseEntity<PatientResponseDto> deletePatient(UUID id) {
+
+    public PatientResponseDto deletePatient(UUID id) {
         Patient patient = patientRepository.findById(id).orElseThrow(
                 () -> new IdNotFoundException("Patient with id " + id + " not found"));
         patientRepository.delete(patient);
-        return ResponseEntity.ok().body(PatientMapper.toDTO(patient));
+        return PatientMapper.toDTO(patient);
     }
 }
