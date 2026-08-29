@@ -72,7 +72,7 @@ public class PatientController {
     @Operation(summary = "Delete Patient", description = "Delete an existing patient",
             responses = {@ApiResponse(responseCode = "200", description = "Patient deleted successfully"),
                     @ApiResponse(responseCode = "404", description = "Patient not found")})
-    public ResponseEntity<PatientResponseDto> deletePatient(@PathVariable UUID id) {
+    public PatientResponseDto deletePatient(@PathVariable UUID id) {
         return patientService.deletePatient(id);
     }
 }
