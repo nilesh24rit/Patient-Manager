@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9757e834-dcfc-4788-8ab0-b122f1014167" name="Changes" comment="new spring boot file for billing-service">
+    <list default="true" id="9757e834-dcfc-4788-8ab0-b122f1014167" name="Changes" comment="dependencies and build for gRPC">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/billing-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/billing-service/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -189,6 +193,13 @@
     <configuration name="get-allPatients | GET request to get all patients" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/patient-service/get-allPatients.http" executionIdentifier="GET request to get all patients" runType="Run single request">
       <method v="2" />
     </configuration>
+    <configuration name="BillingServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="billing-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.nilesh.billingservice.BillingServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="patient-service-db" type="docker-deploy" factoryName="docker-image" server-name="Docker">
       <deployment type="docker-image">
         <settings>
@@ -278,6 +289,7 @@
       <item itemvalue="Docker.patient-service-db" />
       <item itemvalue="Docker.patient-service" />
       <item itemvalue="HTTP Request.get-allPatients | GET request to get all patients" />
+      <item itemvalue="Spring Boot.BillingServiceApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -299,7 +311,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1787224382880</updated>
-      <workItem from="1787980344811" duration="9357000" />
+      <workItem from="1787980344811" duration="9637000" />
+      <workItem from="1788063009914" duration="311000" />
     </task>
     <task id="LOCAL-00001" summary="Patient Entity">
       <option name="closed" value="true" />
@@ -605,14 +618,21 @@
       <option name="project" value="LOCAL" />
       <updated>1787990020704</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="dependencies and build for gRPC">
+      <option name="closed" value="true" />
+      <created>1787990159698</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1787990159698</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Corrected API" />
     <MESSAGE value="Patient Request DTO" />
     <MESSAGE value="Patient -&gt; Patent req DTO" />
     <MESSAGE value="PatientRequestDTO-&gt;Patient" />
@@ -637,6 +657,7 @@
     <MESSAGE value="changs to work in docker" />
     <MESSAGE value="changes to work in docker" />
     <MESSAGE value="new spring boot file for billing-service" />
-    <option name="LAST_COMMIT_MESSAGE" value="new spring boot file for billing-service" />
+    <MESSAGE value="dependencies and build for gRPC" />
+    <option name="LAST_COMMIT_MESSAGE" value="dependencies and build for gRPC" />
   </component>
 </project>
