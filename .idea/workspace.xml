@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9757e834-dcfc-4788-8ab0-b122f1014167" name="Changes" comment="dependencies and build for gRPC">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="9757e834-dcfc-4788-8ab0-b122f1014167" name="Changes" comment="fixed errors of plugins and dependencies">
+      <change afterPath="$PROJECT_DIR$/billing-service/src/proto/billing_service.proto" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billing-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/billing-service/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -312,7 +309,7 @@
       <option name="presentableId" value="Default" />
       <updated>1787224382880</updated>
       <workItem from="1787980344811" duration="9637000" />
-      <workItem from="1788063009914" duration="311000" />
+      <workItem from="1788063009914" duration="1344000" />
     </task>
     <task id="LOCAL-00001" summary="Patient Entity">
       <option name="closed" value="true" />
@@ -626,14 +623,21 @@
       <option name="project" value="LOCAL" />
       <updated>1787990159698</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="fixed errors of plugins and dependencies">
+      <option name="closed" value="true" />
+      <created>1788063393926</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1788063393926</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Patient Request DTO" />
     <MESSAGE value="Patient -&gt; Patent req DTO" />
     <MESSAGE value="PatientRequestDTO-&gt;Patient" />
     <MESSAGE value="Create Patient" />
@@ -658,6 +662,7 @@
     <MESSAGE value="changes to work in docker" />
     <MESSAGE value="new spring boot file for billing-service" />
     <MESSAGE value="dependencies and build for gRPC" />
-    <option name="LAST_COMMIT_MESSAGE" value="dependencies and build for gRPC" />
+    <MESSAGE value="fixed errors of plugins and dependencies" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed errors of plugins and dependencies" />
   </component>
 </project>
