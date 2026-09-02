@@ -1,14 +1,12 @@
 ### POST request to example server
-POST http://localhost:8081/patients/create-patient
+POST http://localhost:8081/patient/create-patient
 Content-Type: application/json
 
 {
-  "name": "Rahul Sharma",
-  "email": "rahul.sharma@gmail.com",
-  "address": "Bangalore, Karnataka",
-  "dob": "2003-05-15",
-  "regestrationDate": "2026-08-25"
+  "name": "Ananya Reddy",
+  "email": "ananya.reddy@gmail.com",
+  "address": "Whitefield, Bangalore",
+  "dob": "2001-11-08",
+  "regestrationDate": "2026-09-02"
 }
-
-
 ###
