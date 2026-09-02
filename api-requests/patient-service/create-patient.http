@@ -1,5 +1,5 @@
 ### POST request to example server
-POST http://localhost:8080/patients/AllPatients
+POST http://localhost:8081/patients/create-patient
 Content-Type: application/json
 
 {
