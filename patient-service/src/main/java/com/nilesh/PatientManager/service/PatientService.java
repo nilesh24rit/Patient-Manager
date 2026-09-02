@@ -4,6 +4,7 @@ import com.nilesh.PatientManager.dto.PatientRequestDTO;
 import com.nilesh.PatientManager.dto.PatientResponseDto;
 import com.nilesh.PatientManager.exceptions.EmailAlreadyExistsException;
 import com.nilesh.PatientManager.exceptions.IdNotFoundException;
+import com.nilesh.PatientManager.gRPC.BillingServiceGrpcClient;
 import com.nilesh.PatientManager.mapper.PatientMapper;
 import com.nilesh.PatientManager.model.Patient;
 import com.nilesh.PatientManager.repository.PatientRepository;
@@ -19,9 +20,11 @@ public class PatientService {
 
     // Constructor injection instead of @Autowired - allows the field to be final and is easier to test
     private final PatientRepository patientRepository;
+    private final BillingServiceGrpcClient billingServiceGrpcClient;
 
-    public PatientService(PatientRepository patientRepository) {
+    public PatientService(PatientRepository patientRepository, BillingServiceGrpcClient billingServiceGrpcClient) {
         this.patientRepository = patientRepository;
+        this.billingServiceGrpcClient = billingServiceGrpcClient;
     }
 
     public List<PatientResponseDto> getAllPatient() {
@@ -35,6 +38,9 @@ public class PatientService {
                     + patientRequestDTO.getEmail());
         }
         Patient newPatient = patientRepository.save(PatientMapper.toModel(patientRequestDTO));
+        // Create a billing account for the new patient
+        billingServiceGrpcClient.createBillingAccount(newPatient.getId().toString(),
+                newPatient.getName(), newPatient.getEmail());
         return PatientMapper.toDTO(newPatient);
     }
 
