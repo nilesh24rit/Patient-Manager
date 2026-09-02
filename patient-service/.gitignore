@@ -23,6 +23,7 @@ target/
 
 ### NetBeans ###
 /nbproject/private/
+Docker data/
 /nbbuild/
 /dist/
 /nbdist/
