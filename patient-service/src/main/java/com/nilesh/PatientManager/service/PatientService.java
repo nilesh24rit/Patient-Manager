@@ -5,6 +5,7 @@ import com.nilesh.PatientManager.dto.PatientResponseDto;
 import com.nilesh.PatientManager.exceptions.EmailAlreadyExistsException;
 import com.nilesh.PatientManager.exceptions.IdNotFoundException;
 import com.nilesh.PatientManager.gRPC.BillingServiceGrpcClient;
+import com.nilesh.PatientManager.kafka.kafkaProducer;
 import com.nilesh.PatientManager.mapper.PatientMapper;
 import com.nilesh.PatientManager.model.Patient;
 import com.nilesh.PatientManager.repository.PatientRepository;
@@ -21,10 +22,14 @@ public class PatientService {
     // Constructor injection instead of @Autowired - allows the field to be final and is easier to test
     private final PatientRepository patientRepository;
     private final BillingServiceGrpcClient billingServiceGrpcClient;
+    private final kafkaProducer kafkaProducer;
 
-    public PatientService(PatientRepository patientRepository, BillingServiceGrpcClient billingServiceGrpcClient) {
+    public PatientService(PatientRepository patientRepository,
+                          BillingServiceGrpcClient billingServiceGrpcClient,
+                          kafkaProducer kafkaProducer) {
         this.patientRepository = patientRepository;
         this.billingServiceGrpcClient = billingServiceGrpcClient;
+        this.kafkaProducer = kafkaProducer;
     }
 
     public List<PatientResponseDto> getAllPatient() {
@@ -41,6 +46,7 @@ public class PatientService {
         // Create a billing account for the new patient
         billingServiceGrpcClient.createBillingAccount(newPatient.getId().toString(),
                 newPatient.getName(), newPatient.getEmail());
+        kafkaProducer.sendEvent(newPatient);
         return PatientMapper.toDTO(newPatient);
     }
 
