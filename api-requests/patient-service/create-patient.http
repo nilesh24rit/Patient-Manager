@@ -3,8 +3,8 @@ POST http://localhost:8081/patient/create-patient
 Content-Type: application/json
 
 {
-  "name": "Ananya Reddy",
-  "email": "ananya.reddy@gmail.com",
+  "name": "Pandu Reddy",
+  "email": "pandu.reddy123456@gmail.com",
   "address": "Whitefield, Bangalore",
   "dob": "2001-11-08",
   "regestrationDate": "2026-09-02"
