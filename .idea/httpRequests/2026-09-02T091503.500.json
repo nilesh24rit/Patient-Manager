@@ -1,0 +1,6 @@
+{
+  "timestamp": "2026-09-02T03:45:02.944Z",
+  "status": 500,
+  "error": "Internal Server Error",
+  "path": "/patient/create-patient"
+}

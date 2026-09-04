@@ -1,0 +1,96 @@
+POST http://localhost:8081/patient/create-patient
+Content-Type: application/json
+Content-Length: 166
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Pandu Reddy",
+  "email": "pandu.reddy123456@gmail.com",
+  "address": "Whitefield, Bangalore",
+  "dob": "2001-11-08",
+  "regestrationDate": "2026-09-02"
+}
+
+<> 2026-09-04T062452.200.json
+
+###
+
+POST http://localhost:8081/patient/create-patient
+Content-Type: application/json
+Content-Length: 162
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Ananya Reddy",
+  "email": "ananya.reddy@gmail.com",
+  "address": "Whitefield, Bangalore",
+  "dob": "2001-11-08",
+  "regestrationDate": "2026-09-02"
+}
+
+<> 2026-09-02T091758.200.json
+
+###
+
+POST http://localhost:8081/patient/create-patient
+Content-Type: application/json
+Content-Length: 162
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Ananya Reddy",
+  "email": "ananya.reddy@gmail.com",
+  "address": "Whitefield, Bangalore",
+  "dob": "2001-11-08",
+  "registrationDate": "2026-09-02"
+}
+
+<> 2026-09-02T091503.500.json
+
+###
+
+POST http://localhost:8081/patients/create-patient
+Content-Type: application/json
+Content-Length: 161
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Vikas Sharma",
+  "email": "vikas.sharma@gmail.com",
+  "address": "Bangalore, Karnataka",
+  "dob": "2003-05-15",
+  "regestrationDate": "2026-08-25"
+}
+
+<> 2026-09-02T091057.404.json
+
+###
+
+POST http://localhost:8081/patients/all-patients
+Content-Type: application/json
+Content-Length: 161
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Rahul Sharma",
+  "email": "rahul.sharma@gmail.com",
+  "address": "Bangalore, Karnataka",
+  "dob": "2003-05-15",
+  "regestrationDate": "2026-08-25"
+}
+
+<> 2026-09-02T090912.404.json
+
+###
+
+GRPC localhost:9090/BillingService/CreateBillingAccountGRPC localhost:9090/BillingService/CreateBillingAccountGRPC localhost:9090/BillingService/CreateBillingAccount

@@ -1,0 +1,888 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9757e834-dcfc-4788-8ab0-b122f1014167" name="Changes" comment="kafka config" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_C:/Users/Pinki/OneDrive/Desktop/Spring Boot/PatientManager" value="3IVK4wxW8UdWT6qpGhzjfI3H6MK" />
+    </persistenceIdMap>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Exception" />
+        <option value="HTTP Request" />
+        <option value="Dockerfile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;nilesh24rit&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/nilesh24rit/Patient-Manager.git&quot;,
+    &quot;accountId&quot;: &quot;cc461455-4015-4d9f-9f3e-2c6ba13faac8&quot;
+  }
+}</component>
+  <component name="HttpClientOnboardingState">{
+  &quot;isOnboardingCommentShown&quot;: true
+}</component>
+  <component name="HttpClientSelectedEnvironments">
+    <file url="file://$PROJECT_DIR$/api-requests/patient-service/get-allPatients.http" />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.000000000000006" />
+      <entry key="MS500" value="1.0014363248179257" />
+      <entry key="S2" value="1.2916054069064042" />
+      <entry key="S5" value="2.5202154755608817" />
+      <entry key="S10" value="3.9741818780859024" />
+      <entry key="S30" value="6.799644098316717" />
+      <entry key="S60" value="9.377049114967209" />
+      <entry key="M2" value="12.143054402303493" />
+      <entry key="M5" value="15.524708019722164" />
+      <entry key="M10" value="21.184884019816717" />
+      <entry key="M15" value="28.804591948691613" />
+      <entry key="M30" value="52.66487542930879" />
+      <entry key="H1" value="88.23153981143982" />
+      <entry key="H2" value="125.92310139856313" />
+      <entry key="H4" value="178.0764179674775" />
+      <entry key="D1" value="563.6143919244312" />
+      <entry key="W1" value="808.902420272869" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="6.173228546417005E-97" />
+      <entry key="S5" value="3.282501568764052E-39" />
+      <entry key="S10" value="5.729311973335262E-20" />
+      <entry key="S30" value="3.855608039634267E-7" />
+      <entry key="S60" value="6.281134414584064E-4" />
+      <entry key="M2" value="0.027615120769857015" />
+      <entry key="M5" value="0.34413280610392527" />
+      <entry key="M10" value="1.168725478397252" />
+      <entry key="M15" value="2.149488621939384" />
+      <entry key="M30" value="4.929053059319693" />
+      <entry key="H1" value="8.937246902672157" />
+      <entry key="H2" value="13.512108976789468" />
+      <entry key="H4" value="25.526333838383415" />
+      <entry key="D1" value="175.1240997385064" />
+      <entry key="W1" value="277.2714499236563" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.9012504626108356" />
+      <entry key="MS500" value="0.9808270727015911" />
+      <entry key="S2" value="1.284776032376554" />
+      <entry key="S5" value="2.514126147334389" />
+      <entry key="S10" value="3.968718161292116" />
+      <entry key="S30" value="6.793192080912257" />
+      <entry key="S60" value="9.370991513632129" />
+      <entry key="M2" value="12.164948343985149" />
+      <entry key="M5" value="15.861814201893862" />
+      <entry key="M10" value="22.335029326385126" />
+      <entry key="M15" value="30.925373648076018" />
+      <entry key="M30" value="57.55556377382353" />
+      <entry key="H1" value="97.13428504393006" />
+      <entry key="H2" value="139.41075135238623" />
+      <entry key="H4" value="203.5858207211637" />
+      <entry key="D1" value="738.7292153835392" />
+      <entry key="W1" value="1086.1719344155242" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3IB3xhJpNsnDRq1N0sUCG39yYEw" />
+  <component name="ProjectSessionTemplates">
+    <option name="inlineTemplate">
+      <template>
+        <option name="modeId" value="InlineAgent" />
+        <option name="model">
+          <model>
+            <option name="modelType" value="builtin_id" />
+            <option name="modelValue" value="auto" />
+          </model>
+        </option>
+        <option name="targetType" value="LOCAL" />
+      </template>
+    </option>
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Docker.billing-service.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.kafka.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.patient-service-db.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.patient-service.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.create-account | #1.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.create-patient | POST request to example server.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.get-allPatients | GET request to get all patients.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;Spring Boot.BillingServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.PatientManagerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;copilot.chat.legacySessionMetadata.migrated&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Pinki/OneDrive/Desktop/Spring Boot/PatientManager/patient-service/src/main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Pinki\OneDrive\Desktop\Spring Boot\PatientManager\patient-service\src\main" />
+      <recent name="C:\Users\Pinki\OneDrive\Desktop\Spring Boot\PatientManager\patient-service" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Pinki\OneDrive\Desktop\Spring Boot\PatientManager\billing-service\src\main" />
+      <recent name="C:\Users\Pinki\OneDrive\Desktop\Spring Boot\PatientManager\billing-service\src" />
+      <recent name="C:\Users\Pinki\OneDrive\Desktop\Spring Boot\PatientManager\Data" />
+      <recent name="C:\Users\Pinki\OneDrive\Desktop\Spring Boot\PatientManager\patient-service" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationStatuses">
+      <map>
+        <entry key="HttpClient.HttpRequestRunConfigurationType">
+          <value>
+            <map>
+              <entry key="create-account | #1" value="STOPPED" />
+              <entry key="create-patient | POST request to example server" value="STOPPED" />
+            </map>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="RunManager" selected="Docker.patient-service">
+    <configuration name="create-account | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/gRPC-request/billing-service/create-account.http" executionIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="create-patient | POST request to example server" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/patient-service/create-patient.http" executionIdentifier="POST request to example server" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="get-allPatients | GET request to get all patients" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/patient-service/get-allPatients.http" executionIdentifier="GET request to get all patients" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="AnalyticsServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="analytics-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.nilesh.analyticsservice.AnalyticsServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BillingServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="billing-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.nilesh.billingservice.BillingServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PatientManagerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="PatientManager" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.nilesh.PatientManager.PatientManagerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="billing-service" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="billing-service:latest" />
+          <option name="containerName" value="billing-service" />
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="6969" />
+                <option name="hostPort" value="6969" />
+              </DockerPortBindingImpl>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="7001" />
+                <option name="hostPort" value="7001" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="commandLineOptions" value="--network internal" />
+          <option name="sourceFilePath" value="billing-service/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="kafka" type="docker-deploy" factoryName="docker-image" server-name="Docker">
+      <deployment type="docker-image">
+        <settings>
+          <option name="imageTag" value="apache/kafka:latest" />
+          <option name="containerName" value="kafka" />
+          <option name="envVars">
+            <list>
+              <DockerEnvVarImpl>
+                <option name="name" value="KAFKA_ADVERTISED_LISTENERS" />
+                <option name="value" value="PLAINTEXT://kafka:9092,EXTERNAL://localhost:9094" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="KAFKA_CONTROLLER_LISTENER_NAMES" />
+                <option name="value" value="CONTROLLER" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="KAFKA_CONTROLLER_QUORUM_VOTERS" />
+                <option name="value" value="0@kafka:9093" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="KAFKA_LISTENER_SECURITY_PROTOCOL_MAP" />
+                <option name="value" value="CONTROLLER:PLAINTEXT,EXTERNAL:PLAINTEXT,PLAINTEXT:PLAINTEXT" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="KAFKA_LISTENERS" />
+                <option name="value" value="PLAINTEXT://:9092,CONTROLLER://:9093,EXTERNAL://:9094" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="KAFKA_NODE_ID" />
+                <option name="value" value="0" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="KAFKA_PROCESS_ROLES" />
+                <option name="value" value="controller,broker" />
+              </DockerEnvVarImpl>
+            </list>
+          </option>
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="9092" />
+                <option name="hostPort" value="9092" />
+              </DockerPortBindingImpl>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="9094" />
+                <option name="hostPort" value="9094" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="commandLineOptions" value="--network internal" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="patient-service-db" type="docker-deploy" factoryName="docker-image" server-name="Docker">
+      <deployment type="docker-image">
+        <settings>
+          <option name="imageTag" value="postgres:17" />
+          <option name="containerName" value="patient-service-db" />
+          <option name="envVars">
+            <list>
+              <DockerEnvVarImpl>
+                <option name="name" value="POSTGRES_USER" />
+                <option name="value" value="admin_user" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="POSTGRES_PASSWORD" />
+                <option name="value" value="admin" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="POSTGRES_DB" />
+                <option name="value" value="db" />
+              </DockerEnvVarImpl>
+            </list>
+          </option>
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="5432" />
+                <option name="hostPort" value="5000" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="commandLineOptions" value="--network internal" />
+          <option name="volumeBindings">
+            <list>
+              <DockerVolumeBindingImpl>
+                <option name="containerPath" value="/var/lib/postgresql/data" />
+                <option name="hostPath" value="C:\Users\Pinki\OneDrive\Desktop\Spring Boot\PatientManager\Docker data\Host Folder" />
+              </DockerVolumeBindingImpl>
+            </list>
+          </option>
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="patient-service" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="patient-service" />
+          <option name="containerName" value="patient-service" />
+          <option name="envVars">
+            <list>
+              <DockerEnvVarImpl>
+                <option name="name" value="BILLING_SERVICE_ADDRESS" />
+                <option name="value" value="billing-service" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="BILLING_SERVICE_GRPC_PORT" />
+                <option name="value" value="7001" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="SPRING_DATASOURCE_PASSWORD" />
+                <option name="value" value="admin" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="SPRING_DATASOURCE_URL" />
+                <option name="value" value="jdbc:postgresql://patient-service-db:5432/db" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="SPRING_DATASOURCE_USERNAME" />
+                <option name="value" value="admin_user" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="SPRING_JPA_HIBERNAET__DDL_AUTO" />
+                <option name="value" value="update" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="SPRING_SQL_INIT_MODE" />
+                <option name="value" value="always" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="SPRING_KAFKA_BOOTSTRAP_SERVER" />
+                <option name="value" value="kafka:9092" />
+              </DockerEnvVarImpl>
+            </list>
+          </option>
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="8081" />
+                <option name="hostPort" value="8081" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="commandLineOptions" value="--network internal" />
+          <option name="sourceFilePath" value="patient-service/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Docker.billing-service" />
+      <item itemvalue="Docker.patient-service-db" />
+      <item itemvalue="Docker.patient-service" />
+      <item itemvalue="Docker.kafka" />
+      <item itemvalue="HTTP Request.create-patient | POST request to example server" />
+      <item itemvalue="HTTP Request.create-account | #1" />
+      <item itemvalue="HTTP Request.get-allPatients | GET request to get all patients" />
+      <item itemvalue="Spring Boot.AnalyticsServiceApplication" />
+      <item itemvalue="Spring Boot.PatientManagerApplication" />
+      <item itemvalue="Spring Boot.BillingServiceApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.create-patient | POST request to example server" />
+        <item itemvalue="HTTP Request.create-account | #1" />
+        <item itemvalue="HTTP Request.get-allPatients | GET request to get all patients" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.26222.65" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9757e834-dcfc-4788-8ab0-b122f1014167" name="Changes" comment="" />
+      <created>1787224382880</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1787224382880</updated>
+      <workItem from="1787980344811" duration="9637000" />
+      <workItem from="1788063009914" duration="6094000" />
+      <workItem from="1788135352651" duration="3106000" />
+      <workItem from="1788273199077" duration="8933000" />
+      <workItem from="1788443489534" duration="4178000" />
+      <workItem from="1788481263515" duration="2468000" />
+    </task>
+    <task id="LOCAL-00017" summary="Create Patient">
+      <option name="closed" value="true" />
+      <created>1787665353367</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1787665353367</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Create Patient">
+      <option name="closed" value="true" />
+      <created>1787667024796</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1787667024796</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Exception Handeler">
+      <option name="closed" value="true" />
+      <created>1787671351852</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1787671351852</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Custom Email Exception">
+      <option name="closed" value="true" />
+      <created>1787672319659</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1787672319659</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Email exception handeler">
+      <option name="closed" value="true" />
+      <created>1787672361812</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1787672361812</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Log Msg">
+      <option name="closed" value="true" />
+      <created>1787672612862</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1787672612863</updated>
+    </task>
+    <task id="LOCAL-00023" summary="ID not found exception">
+      <option name="closed" value="true" />
+      <created>1787756651193</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1787756651193</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Update patient service">
+      <option name="closed" value="true" />
+      <created>1787756964134</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1787756964134</updated>
+    </task>
+    <task id="LOCAL-00025" summary="put mapping to update patient">
+      <option name="closed" value="true" />
+      <created>1787757171149</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1787757171149</updated>
+    </task>
+    <task id="LOCAL-00026" summary="update patient HTTP">
+      <option name="closed" value="true" />
+      <created>1787757658958</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1787757658958</updated>
+    </task>
+    <task id="LOCAL-00027" summary="fixed reg date bug">
+      <option name="closed" value="true" />
+      <created>1787840689412</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1787840689412</updated>
+    </task>
+    <task id="LOCAL-00028" summary="existsByEmail-&gt;existsByEmailandIdNot">
+      <option name="closed" value="true" />
+      <created>1787841480530</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1787841480530</updated>
+    </task>
+    <task id="LOCAL-00029" summary="delete patient by id">
+      <option name="closed" value="true" />
+      <created>1787842807404</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1787842807404</updated>
+    </task>
+    <task id="LOCAL-00030" summary="API Documentation Dependency">
+      <option name="closed" value="true" />
+      <created>1787843148110</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1787843148110</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Fixed existsByEmailAndIdNot errors">
+      <option name="closed" value="true" />
+      <created>1787845331906</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1787845331906</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Created Detailed API documentation">
+      <option name="closed" value="true" />
+      <created>1787845353951</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1787845353951</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Created Detailed API documentation + fix SonarQube code smells in PatientController">
+      <option name="closed" value="true" />
+      <created>1787931749582</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1787931749582</updated>
+    </task>
+    <task id="LOCAL-00034" summary="decouple PatientService from Spring MVC (ResponseEntity)">
+      <option name="closed" value="true" />
+      <created>1787931901676</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1787931901676</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Created Dockerfile">
+      <option name="closed" value="true" />
+      <created>1787986044231</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1787986044233</updated>
+    </task>
+    <task id="LOCAL-00036" summary="changes to work in docker">
+      <option name="closed" value="true" />
+      <created>1787986094305</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1787986094305</updated>
+    </task>
+    <task id="LOCAL-00037" summary="changes to work in docker">
+      <option name="closed" value="true" />
+      <created>1787989941676</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1787989941677</updated>
+    </task>
+    <task id="LOCAL-00038" summary="new spring boot file for billing-service">
+      <option name="closed" value="true" />
+      <created>1787990020703</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1787990020704</updated>
+    </task>
+    <task id="LOCAL-00039" summary="dependencies and build for gRPC">
+      <option name="closed" value="true" />
+      <created>1787990159698</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1787990159698</updated>
+    </task>
+    <task id="LOCAL-00040" summary="fixed errors of plugins and dependencies">
+      <option name="closed" value="true" />
+      <created>1788063393926</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1788063393926</updated>
+    </task>
+    <task id="LOCAL-00041" summary="billing service proto file">
+      <option name="closed" value="true" />
+      <created>1788065111311</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1788065111311</updated>
+    </task>
+    <task id="LOCAL-00042" summary=" update gRPC and Protobuf dependencies to compatible versions">
+      <option name="closed" value="true" />
+      <created>1788065625947</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1788065625947</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Lombok Dependency">
+      <option name="closed" value="true" />
+      <created>1788072219321</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1788072219321</updated>
+    </task>
+    <task id="LOCAL-00044" summary="create account Grpc service">
+      <option name="closed" value="true" />
+      <created>1788136187121</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1788136187122</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Billing Service Dockerfile">
+      <option name="closed" value="true" />
+      <created>1788136592589</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1788136592589</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Lombok plugon">
+      <option name="closed" value="true" />
+      <created>1788137476687</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1788137476687</updated>
+    </task>
+    <task id="LOCAL-00047" summary="feat(patient-service): add gRPC and protobuf dependencies">
+      <option name="closed" value="true" />
+      <created>1788138452511</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1788138452511</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Fixed ports">
+      <option name="closed" value="true" />
+      <created>1788138479669</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1788138479669</updated>
+    </task>
+    <task id="LOCAL-00049" summary="gRPC and proto dependencies and builds">
+      <option name="closed" value="true" />
+      <created>1788274648875</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1788274648875</updated>
+    </task>
+    <task id="LOCAL-00050" summary="proto file in patient service">
+      <option name="closed" value="true" />
+      <created>1788274852617</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1788274852618</updated>
+    </task>
+    <task id="LOCAL-00051" summary="lombok plugin">
+      <option name="closed" value="true" />
+      <created>1788276146364</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1788276146364</updated>
+    </task>
+    <task id="LOCAL-00052" summary="fixed typetag :: unknown bug">
+      <option name="closed" value="true" />
+      <created>1788276475752</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1788276475752</updated>
+    </task>
+    <task id="LOCAL-00053" summary="billing service client">
+      <option name="closed" value="true" />
+      <created>1788318426164</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1788318426164</updated>
+    </task>
+    <task id="LOCAL-00054" summary="method for creating a billing account">
+      <option name="closed" value="true" />
+      <created>1788319353652</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1788319353652</updated>
+    </task>
+    <task id="LOCAL-00055" summary="creating a billing account in patient service while creating the patient account">
+      <option name="closed" value="true" />
+      <created>1788319458910</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1788319458910</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Corrected Port">
+      <option name="closed" value="true" />
+      <created>1788320421512</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1788320421513</updated>
+    </task>
+    <task id="LOCAL-00057" summary="creating patient with billing account">
+      <option name="closed" value="true" />
+      <created>1788320965293</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1788320965294</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Kafka dependency">
+      <option name="closed" value="true" />
+      <created>1788445506963</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1788445506967</updated>
+    </task>
+    <task id="LOCAL-00059" summary="kafka producer for patient service">
+      <option name="closed" value="true" />
+      <created>1788445970145</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1788445970145</updated>
+    </task>
+    <task id="LOCAL-00060" summary="patient event proto file">
+      <option name="closed" value="true" />
+      <created>1788446448855</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1788446448855</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Send event method">
+      <option name="closed" value="true" />
+      <created>1788447223422</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1788447223423</updated>
+    </task>
+    <task id="LOCAL-00062" summary="add @Service to create a bean">
+      <option name="closed" value="true" />
+      <created>1788447854196</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1788447854196</updated>
+    </task>
+    <task id="LOCAL-00063" summary="send event while creating a patient">
+      <option name="closed" value="true" />
+      <created>1788447878185</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1788447878186</updated>
+    </task>
+    <task id="LOCAL-00064" summary="kafka config">
+      <option name="closed" value="true" />
+      <created>1788483184416</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1788483184420</updated>
+    </task>
+    <task id="LOCAL-00065" summary="POST request for checking kafka">
+      <option name="closed" value="true" />
+      <created>1788483339878</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1788483339878</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value=" update gRPC and Protobuf dependencies to compatible versions" />
+    <MESSAGE value="Lombok Dependency" />
+    <MESSAGE value="create account Grpc service" />
+    <MESSAGE value="Billing Service Dockerfile" />
+    <MESSAGE value="Lombok plugon" />
+    <MESSAGE value="feat(patient-service): add gRPC and protobuf dependencies" />
+    <MESSAGE value="Fixed ports" />
+    <MESSAGE value="gRPC and proto dependencies and builds" />
+    <MESSAGE value="gRPC and proto dependencies and build" />
+    <MESSAGE value="proto file in patient service" />
+    <MESSAGE value="lombok plugin" />
+    <MESSAGE value="fixed typetag :: unknown bug" />
+    <MESSAGE value="billing service client" />
+    <MESSAGE value="method for creating a billing account" />
+    <MESSAGE value="creating a billing account in patient service while creating the patient account" />
+    <MESSAGE value="Corrected Port" />
+    <MESSAGE value="creating patient with billing account" />
+    <MESSAGE value="Kafka dependency" />
+    <MESSAGE value="kafka producer for patient service" />
+    <MESSAGE value="patient event proto file" />
+    <MESSAGE value="Send event method" />
+    <MESSAGE value="add @Service to create a bean" />
+    <MESSAGE value="send event while creating a patient" />
+    <MESSAGE value="kafka config" />
+    <MESSAGE value="POST request for checking kafka" />
+    <option name="LAST_COMMIT_MESSAGE" value="POST request for checking kafka" />
+  </component>
+</project>
