@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9757e834-dcfc-4788-8ab0-b122f1014167" name="Changes" comment="kafka config" />
+    <list default="true" id="9757e834-dcfc-4788-8ab0-b122f1014167" name="Changes" comment="Dockerfile for analytics-service">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,61 +61,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.000000000000006" />
-      <entry key="MS500" value="1.0014363248179257" />
-      <entry key="S2" value="1.2916054069064042" />
-      <entry key="S5" value="2.5202154755608817" />
-      <entry key="S10" value="3.9741818780859024" />
-      <entry key="S30" value="6.799644098316717" />
-      <entry key="S60" value="9.377049114967209" />
-      <entry key="M2" value="12.143054402303493" />
-      <entry key="M5" value="15.524708019722164" />
-      <entry key="M10" value="21.184884019816717" />
-      <entry key="M15" value="28.804591948691613" />
-      <entry key="M30" value="52.66487542930879" />
-      <entry key="H1" value="88.23153981143982" />
-      <entry key="H2" value="125.92310139856313" />
-      <entry key="H4" value="178.0764179674775" />
-      <entry key="D1" value="563.6143919244312" />
-      <entry key="W1" value="808.902420272869" />
+      <entry key="MS100" value="1.0007400959797415" />
+      <entry key="MS500" value="1.2365144116813989" />
+      <entry key="S2" value="1.6973718331752026" />
+      <entry key="S5" value="1.8657365655196583" />
+      <entry key="S10" value="1.9304496577030152" />
+      <entry key="S30" value="1.9762572980679232" />
+      <entry key="S60" value="1.9880698572785653" />
+      <entry key="M2" value="2.0059616236201068" />
+      <entry key="M5" value="2.749932606860905" />
+      <entry key="M10" value="5.135928695689474" />
+      <entry key="M15" value="7.828177240179083" />
+      <entry key="M30" value="20.151844535582608" />
+      <entry key="H1" value="54.3927633685218" />
+      <entry key="H2" value="112.0107836361524" />
+      <entry key="H4" value="188.0574349348898" />
+      <entry key="D1" value="609.1553119629797" />
+      <entry key="W1" value="884.2214447629038" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
-      <entry key="S2" value="6.173228546417005E-97" />
-      <entry key="S5" value="3.282501568764052E-39" />
-      <entry key="S10" value="5.729311973335262E-20" />
-      <entry key="S30" value="3.855608039634267E-7" />
-      <entry key="S60" value="6.281134414584064E-4" />
-      <entry key="M2" value="0.027615120769857015" />
-      <entry key="M5" value="0.34413280610392527" />
-      <entry key="M10" value="1.168725478397252" />
-      <entry key="M15" value="2.149488621939384" />
-      <entry key="M30" value="4.929053059319693" />
-      <entry key="H1" value="8.937246902672157" />
-      <entry key="H2" value="13.512108976789468" />
-      <entry key="H4" value="25.526333838383415" />
-      <entry key="D1" value="175.1240997385064" />
-      <entry key="W1" value="277.2714499236563" />
+      <entry key="S2" value="1.3571990455871355E-172" />
+      <entry key="S5" value="1.7908491043698618E-69" />
+      <entry key="S10" value="4.2398958831883724E-35" />
+      <entry key="S30" value="3.916767201217606E-12" />
+      <entry key="S60" value="2.524010433969735E-6" />
+      <entry key="M2" value="0.002177004519348631" />
+      <entry key="M5" value="0.1295918286310118" />
+      <entry key="M10" value="0.5312659165068316" />
+      <entry key="M15" value="0.9717481372403145" />
+      <entry key="M30" value="2.7604016614407656" />
+      <entry key="H1" value="7.092771729205425" />
+      <entry key="H2" value="14.072958151253376" />
+      <entry key="H4" value="27.103036814624623" />
+      <entry key="D1" value="176.02940775487806" />
+      <entry key="W1" value="286.73284418929137" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9012504626108356" />
-      <entry key="MS500" value="0.9808270727015911" />
-      <entry key="S2" value="1.284776032376554" />
-      <entry key="S5" value="2.514126147334389" />
-      <entry key="S10" value="3.968718161292116" />
-      <entry key="S30" value="6.793192080912257" />
-      <entry key="S60" value="9.370991513632129" />
-      <entry key="M2" value="12.164948343985149" />
-      <entry key="M5" value="15.861814201893862" />
-      <entry key="M10" value="22.335029326385126" />
-      <entry key="M15" value="30.925373648076018" />
-      <entry key="M30" value="57.55556377382353" />
-      <entry key="H1" value="97.13428504393006" />
-      <entry key="H2" value="139.41075135238623" />
-      <entry key="H4" value="203.5858207211637" />
-      <entry key="D1" value="738.7292153835392" />
-      <entry key="W1" value="1086.1719344155242" />
+      <entry key="MS100" value="0.9332946549798093" />
+      <entry key="MS500" value="1.1783421021543607" />
+      <entry key="S2" value="1.6585847180255662" />
+      <entry key="S5" value="1.8465346307341766" />
+      <entry key="S10" value="1.9201327901954923" />
+      <entry key="S30" value="1.9726486820370135" />
+      <entry key="S60" value="1.9862459468682856" />
+      <entry key="M2" value="2.0071312197685116" />
+      <entry key="M5" value="2.8771861575744953" />
+      <entry key="M10" value="5.663146725603571" />
+      <entry key="M15" value="8.795327119495562" />
+      <entry key="M30" value="22.905363465318306" />
+      <entry key="H1" value="61.47330486823553" />
+      <entry key="H2" value="126.06892323670554" />
+      <entry key="H4" value="215.1468428815054" />
+      <entry key="D1" value="785.175610125252" />
+      <entry key="W1" value="1170.95231195138" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -141,6 +143,9 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;Docker.analytics-server.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.analytics-service.executor&quot;: &quot;Run&quot;,
     &quot;Docker.billing-service.executor&quot;: &quot;Run&quot;,
     &quot;Docker.kafka.executor&quot;: &quot;Run&quot;,
     &quot;Docker.patient-service-db.executor&quot;: &quot;Run&quot;,
@@ -167,7 +172,7 @@
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Pinki/OneDrive/Desktop/Spring Boot/PatientManager/patient-service/src/main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Pinki/OneDrive/Desktop/Spring Boot/PatientManager/analytics-service&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -176,6 +181,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
@@ -188,6 +194,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Pinki\OneDrive\Desktop\Spring Boot\PatientManager\analytics-service" />
       <recent name="C:\Users\Pinki\OneDrive\Desktop\Spring Boot\PatientManager\patient-service\src\main" />
       <recent name="C:\Users\Pinki\OneDrive\Desktop\Spring Boot\PatientManager\patient-service" />
     </key>
@@ -199,6 +206,14 @@
     </key>
   </component>
   <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="KtorApplicationConfigurationType" />
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
     <option name="configurationStatuses">
       <map>
         <entry key="HttpClient.HttpRequestRunConfigurationType">
@@ -212,7 +227,7 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Docker.patient-service">
+  <component name="RunManager" selected="Docker.analytics-service">
     <configuration name="create-account | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/gRPC-request/billing-service/create-account.http" executionIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -243,6 +258,33 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="analytics-service" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="analytics-service:latest" />
+          <option name="containerName" value="analytics-service" />
+          <option name="envVars">
+            <list>
+              <DockerEnvVarImpl>
+                <option name="name" value="SPRING_KAFKA_BOOTSTRAP_SERVERS" />
+                <option name="value" value="kafka:9092" />
+              </DockerEnvVarImpl>
+            </list>
+          </option>
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="8082" />
+                <option name="hostPort" value="8082" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="commandLineOptions" value="--network internal" />
+          <option name="sourceFilePath" value="analytics-service/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
     </configuration>
     <configuration name="billing-service" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
       <deployment type="dockerfile">
@@ -422,6 +464,7 @@
       <item itemvalue="Docker.billing-service" />
       <item itemvalue="Docker.patient-service-db" />
       <item itemvalue="Docker.patient-service" />
+      <item itemvalue="Docker.analytics-service" />
       <item itemvalue="Docker.kafka" />
       <item itemvalue="HTTP Request.create-patient | POST request to example server" />
       <item itemvalue="HTTP Request.create-account | #1" />
@@ -457,79 +500,9 @@
       <workItem from="1788135352651" duration="3106000" />
       <workItem from="1788273199077" duration="8933000" />
       <workItem from="1788443489534" duration="4178000" />
-      <workItem from="1788481263515" duration="2468000" />
-    </task>
-    <task id="LOCAL-00017" summary="Create Patient">
-      <option name="closed" value="true" />
-      <created>1787665353367</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1787665353367</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Create Patient">
-      <option name="closed" value="true" />
-      <created>1787667024796</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1787667024796</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Exception Handeler">
-      <option name="closed" value="true" />
-      <created>1787671351852</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1787671351852</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Custom Email Exception">
-      <option name="closed" value="true" />
-      <created>1787672319659</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1787672319659</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Email exception handeler">
-      <option name="closed" value="true" />
-      <created>1787672361812</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1787672361812</updated>
-    </task>
-    <task id="LOCAL-00022" summary="Log Msg">
-      <option name="closed" value="true" />
-      <created>1787672612862</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1787672612863</updated>
-    </task>
-    <task id="LOCAL-00023" summary="ID not found exception">
-      <option name="closed" value="true" />
-      <created>1787756651193</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1787756651193</updated>
-    </task>
-    <task id="LOCAL-00024" summary="Update patient service">
-      <option name="closed" value="true" />
-      <created>1787756964134</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1787756964134</updated>
-    </task>
-    <task id="LOCAL-00025" summary="put mapping to update patient">
-      <option name="closed" value="true" />
-      <created>1787757171149</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1787757171149</updated>
+      <workItem from="1788481263515" duration="3937000" />
+      <workItem from="1788617501332" duration="6707000" />
+      <workItem from="1788679250188" duration="732000" />
     </task>
     <task id="LOCAL-00026" summary="update patient HTTP">
       <option name="closed" value="true" />
@@ -851,22 +824,85 @@
       <option name="project" value="LOCAL" />
       <updated>1788483339878</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="protobuf and lombok builds">
+      <option name="closed" value="true" />
+      <created>1788484549129</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1788484549129</updated>
+    </task>
+    <task id="LOCAL-00067" summary="corrected plugins">
+      <option name="closed" value="true" />
+      <created>1788484721606</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1788484721607</updated>
+    </task>
+    <task id="LOCAL-00068" summary="patient event proto in analytics-service">
+      <option name="closed" value="true" />
+      <created>1788485089217</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1788485089217</updated>
+    </task>
+    <task id="LOCAL-00069" summary="protobuf dependency">
+      <option name="closed" value="true" />
+      <created>1788485442539</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1788485442541</updated>
+    </task>
+    <task id="LOCAL-00070" summary="Consume Event in analytics service">
+      <option name="closed" value="true" />
+      <created>1788619264230</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1788619264231</updated>
+    </task>
+    <task id="LOCAL-00071" summary="Dockerfile for analytics-service">
+      <option name="closed" value="true" />
+      <created>1788619664558</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1788619664559</updated>
+    </task>
+    <task id="LOCAL-00072" summary="Kafka consumer serialization and deserialization">
+      <option name="closed" value="true" />
+      <created>1788623108468</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1788623108468</updated>
+    </task>
+    <task id="LOCAL-00073" summary="Deserializer">
+      <option name="closed" value="true" />
+      <created>1788623189004</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1788623189004</updated>
+    </task>
+    <task id="LOCAL-00074" summary="Fixed bug">
+      <option name="closed" value="true" />
+      <created>1788624308083</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1788624308086</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=" update gRPC and Protobuf dependencies to compatible versions" />
-    <MESSAGE value="Lombok Dependency" />
-    <MESSAGE value="create account Grpc service" />
-    <MESSAGE value="Billing Service Dockerfile" />
-    <MESSAGE value="Lombok plugon" />
-    <MESSAGE value="feat(patient-service): add gRPC and protobuf dependencies" />
-    <MESSAGE value="Fixed ports" />
-    <MESSAGE value="gRPC and proto dependencies and builds" />
-    <MESSAGE value="gRPC and proto dependencies and build" />
     <MESSAGE value="proto file in patient service" />
     <MESSAGE value="lombok plugin" />
     <MESSAGE value="fixed typetag :: unknown bug" />
@@ -883,6 +919,15 @@
     <MESSAGE value="send event while creating a patient" />
     <MESSAGE value="kafka config" />
     <MESSAGE value="POST request for checking kafka" />
-    <option name="LAST_COMMIT_MESSAGE" value="POST request for checking kafka" />
+    <MESSAGE value="protobuf and lombok builds" />
+    <MESSAGE value="corrected plugins" />
+    <MESSAGE value="patient event proto in analytics-service" />
+    <MESSAGE value="protobuf dependency" />
+    <MESSAGE value="Consume Event in analytics service" />
+    <MESSAGE value="Dockerfile for analytics-service" />
+    <MESSAGE value="Kafka consumer serialization and deserialization" />
+    <MESSAGE value="Deserializer" />
+    <MESSAGE value="Fixed bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug" />
   </component>
 </project>
