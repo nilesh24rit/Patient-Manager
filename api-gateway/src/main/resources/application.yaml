@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: api-gateway
+
+  cloud:
+    gateway:
+      routes:
+        - id: patient-service
+          uri: ${PATIENT_SERVICE_URL:http://localhost:8081}
+          predicates:
+            - Path=/api/patient/**
+          filters:
+            - StripPrefix=1
+
+        - id: api-docs-patient-route
+          uri: http://patient-service:8081
+          predicates:
+            - Path=/api-docs/patients
+          filters:
+            - rewritePath=/api-docs/patients, /v3/api-docs
+server:
+  port: 8084

@@ -15,8 +15,10 @@ FROM eclipse-temurin:25-jdk
 
 WORKDIR /app
 
+ENV PATIENT_SERVICE_URL=http://patient-service:8081
+
 COPY --from=build /app/target/*.jar app.jar
 
-EXPOSE 8081
+EXPOSE 8084
 
 ENTRYPOINT ["java", "-jar", "app.jar"]
