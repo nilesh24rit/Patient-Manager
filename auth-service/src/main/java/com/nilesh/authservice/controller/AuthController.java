@@ -14,10 +14,8 @@ import java.util.Optional;
 
 @RestController
 public class AuthController {
-    private final JwtUtil jwtUtil;
     private final AuthService authService;
     public AuthController(JwtUtil jwtUtil, AuthService authService) {
-        this.jwtUtil = jwtUtil;
         this.authService = authService;
     }
     @Operation(summary = "Login user", description = "Generate JWT token for user authentication")
