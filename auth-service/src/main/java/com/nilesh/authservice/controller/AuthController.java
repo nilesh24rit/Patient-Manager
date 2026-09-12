@@ -8,6 +8,7 @@ import io.swagger.v3.oas.annotations.Operation;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Optional;
@@ -28,5 +29,16 @@ public class AuthController {
         } else {
             return ResponseEntity.status(401).build();
         }
+    }
+
+    public ResponseEntity<LoginResponseDto> validateToken
+            (@RequestHeader("Authorization") String authHeader){
+        if(authHeader==null || !authHeader.startsWith("Bearer ")){
+            return ResponseEntity.status(401).build();
+        }
+        return authService.validateToken(authHeader.substring(7))
+                ? ResponseEntity.ok().build()
+                : ResponseEntity.status(401).build(); // Remove "Bearer " prefix
+
     }
 }
