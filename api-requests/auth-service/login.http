@@ -1,0 +1,8 @@
+### Login request to recieve a JWT Token
+POST http://localhost:8085/login
+Content-Type: application/json
+
+{
+  "email": "testuser@test,com",
+  "password": "password123"
+}
