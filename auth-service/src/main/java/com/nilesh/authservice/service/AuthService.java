@@ -1,8 +1,8 @@
 package com.nilesh.authservice.service;
 
 import com.nilesh.authservice.dto.LoginRequestDto;
-import com.nilesh.authservice.model.User;
 import com.nilesh.authservice.util.JwtUtil;
+import io.jsonwebtoken.JwtException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -33,5 +33,14 @@ public class AuthService {
                         u.getPassword()))
                 .map(u-> jwtUtil.generateToken(u.getEmail(), u.getRole()));
         return token;
+    }
+
+    public boolean validateToken(String token){
+        try {
+            jwtUtil.validateToken(token);
+            return true;
+        } catch (JwtException e) {
+            return false;
+        }
     }
 }
