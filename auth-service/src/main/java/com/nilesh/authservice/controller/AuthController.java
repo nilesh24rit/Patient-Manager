@@ -6,10 +6,7 @@ import com.nilesh.authservice.service.AuthService;
 import com.nilesh.authservice.util.JwtUtil;
 import io.swagger.v3.oas.annotations.Operation;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestHeader;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
 
@@ -31,6 +28,8 @@ public class AuthController {
         }
     }
 
+    @Operation(summary = "Validate JWT Token", description = "Validate the provided JWT token")
+    @GetMapping("/validate")
     public ResponseEntity<LoginResponseDto> validateToken
             (@RequestHeader("Authorization") String authHeader){
         if(authHeader==null || !authHeader.startsWith("Bearer ")){
