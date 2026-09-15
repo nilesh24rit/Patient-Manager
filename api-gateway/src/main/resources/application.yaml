@@ -13,14 +13,14 @@ spring:
               predicates:
                 - Path=/api/auth/**
               filters:
-                - StripPrefix=1
+                - StripPrefix=2
 
             - id: patient-service
               uri: http://patient-service:8081
               predicates:
                 - Path=/api/patient/**
               filters:
-                - StripPrefix=1
+                - StripPrefix=2
 
             - id: api-docs-patient-route
               uri: http://patient-service:8081
