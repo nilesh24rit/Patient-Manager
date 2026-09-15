@@ -1,5 +1,5 @@
 ### Login request to recieve a JWT Token
-POST http://localhost:8085/login
+POST http://localhost:8084/api/auth/login
 Content-Type: application/json
 
 {
