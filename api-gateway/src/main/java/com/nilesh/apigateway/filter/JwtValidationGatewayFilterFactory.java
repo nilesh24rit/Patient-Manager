@@ -1,6 +1,5 @@
 package com.nilesh.apigateway.filter;
 
-
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.gateway.filter.GatewayFilter;
 import org.springframework.cloud.gateway.filter.factory.AbstractGatewayFilterFactory;
@@ -12,30 +11,37 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.client.WebClient;
 
 @Component
-public class JWTValidationGatewayFilterFactory extends AbstractGatewayFilterFactory<Object> {
-    //GatewayFilterFactory tells spring that it is a filter factory class
+public class JwtValidationGatewayFilterFactory
+        extends AbstractGatewayFilterFactory<Object> {
 
-    public final WebClient webClient;
+    private final WebClient webClient;
 
     @Configuration
-    public class WebClientConfig {
+    public static class WebClientConfig {
 
         @Bean
         public WebClient.Builder webClientBuilder() {
             return WebClient.builder();
         }
     }
-    public JWTValidationGatewayFilterFactory(WebClient.Builder webClientBuilder,
-                                             @Value("${auth.service.url}") String authServiceUrl) {
-        this.webClient = webClientBuilder.baseUrl(authServiceUrl).build();
-    }
 
+    public JwtValidationGatewayFilterFactory(
+            WebClient.Builder webClientBuilder,
+            @Value("${auth.service.url}") String authServiceUrl) {
+
+        this.webClient = webClientBuilder
+                .baseUrl(authServiceUrl)
+                .build();
+    }
     @Override
     public GatewayFilter apply(Object config) {
         return (exchange, chain) -> {
-            String token = exchange.getRequest().getHeaders().getFirst(HttpHeaders.AUTHORIZATION);
+            String token = exchange.getRequest()
+                    .getHeaders()
+                    .getFirst(HttpHeaders.AUTHORIZATION);
             if (token == null || !token.startsWith("Bearer ")) {
-                exchange.getResponse().setStatusCode(HttpStatus.UNAUTHORIZED);
+                exchange.getResponse()
+                        .setStatusCode(HttpStatus.UNAUTHORIZED);
                 return exchange.getResponse().setComplete();
             }
             return webClient.get()
@@ -46,12 +52,10 @@ public class JWTValidationGatewayFilterFactory extends AbstractGatewayFilterFact
                     .flatMap(response -> {
                         if (response.getStatusCode().is2xxSuccessful()) {
                             return chain.filter(exchange);
-                        } else {
-                            exchange.getResponse().setStatusCode(HttpStatus.UNAUTHORIZED);
-                            return exchange.getResponse().setComplete();
                         }
+                        exchange.getResponse().setStatusCode(HttpStatus.UNAUTHORIZED);
+                        return exchange.getResponse().setComplete();
                     });
         };
     }
-
 }
