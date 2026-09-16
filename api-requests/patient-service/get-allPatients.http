@@ -1,3 +1,4 @@
 ### GET request to get all patients
 GET http://localhost:8084/api/patient/all-patient
+Authorization: Bearer {{jwtToken}}
 ###
