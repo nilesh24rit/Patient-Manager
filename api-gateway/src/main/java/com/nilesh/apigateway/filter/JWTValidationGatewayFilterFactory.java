@@ -37,7 +37,19 @@ public class JWTValidationGatewayFilterFactory extends AbstractGatewayFilterFact
                 exchange.getResponse().setStatusCode(HttpStatus.UNAUTHORIZED);
                 return exchange.getResponse().setComplete();
             }
-            return chain.filter(exchange);
+            return webClient.get()
+                    .uri("/validate")
+                    .header(HttpHeaders.AUTHORIZATION, token)
+                    .retrieve()
+                    .toBodilessEntity()
+                    .flatMap(response -> {
+                        if (response.getStatusCode().is2xxSuccessful()) {
+                            return chain.filter(exchange);
+                        } else {
+                            exchange.getResponse().setStatusCode(HttpStatus.UNAUTHORIZED);
+                            return exchange.getResponse().setComplete();
+                        }
+                    });
         };
     }
 
