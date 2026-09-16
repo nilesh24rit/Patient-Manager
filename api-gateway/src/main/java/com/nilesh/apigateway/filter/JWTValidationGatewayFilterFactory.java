@@ -13,6 +13,7 @@ import org.springframework.web.reactive.function.client.WebClient;
 
 @Component
 public class JWTValidationGatewayFilterFactory extends AbstractGatewayFilterFactory<Object> {
+    //GatewayFilterFactory tells spring that it is a filter factory class
 
     public final WebClient webClient;
 

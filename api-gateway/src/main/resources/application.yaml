@@ -21,7 +21,7 @@ spring:
                 - Path=/api/patient/**
               filters:
                 - StripPrefix=2
-                - JwtAuthenticationFilter
+                - JwtValidation
 
             - id: api-docs-patient-route
               uri: http://patient-service:8081
