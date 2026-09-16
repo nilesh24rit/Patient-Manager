@@ -30,6 +30,13 @@ spring:
               filters:
                 - RewritePath=/api-docs/patients, /v3/api-docs
 
+            - id: auth-service-api-docs-route
+              uri: http://auth-service:8085
+              predicates:
+                - Path=/api-docs/auth
+              filters:
+                - RewritePath=/api-docs/auth, /v3/api-docs
+
 server:
   port: 8084
 
